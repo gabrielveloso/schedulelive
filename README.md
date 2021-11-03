@@ -1,27 +1,86 @@
-# Agendalive
+# Angular Schedule Live
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/gabrielveloso/dsvendas-sds/blob/main/LICENSE) 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
+<p align="center">
+ <a href="#about-the-project">About</a> •
+ <a href="#layout-web">Layout web</a> • 
+ <a href="#tecnologias-utilizadas">Tecnologias utilizadas</a> •
+ <a href="#autor">Autor</a>
+</p>
 
-## Development server
+# About the project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+https://dsvendas-gabriel.netlify.app/
 
-## Code scaffolding
+Angular 11 aplication using Angular Material
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+With this application it is possible to register lives and also see a board with past and future lives
 
-## Build
+# Tecnologias utilizadas
+## Back end
+- Java
+- Spring Boot
+- JPA / Hibernate
+- JPQL
+- Maven
+#### Endpoints backend
+    * Heroku: https://gabriel-sdsvendas.herokuapp.com/
+    - /sales (Pageable)
+    - /sales/amount-by-seller (JPQL)
+    - /sales/success-by-seller (JPQL)
+    - /sellers (Pageable)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Front end
+- HTML / CSS / JS / TypeScript
+- Angular 
+- libs: 
+    - Angular Material [(Interface in Material Design Style)](https://material.angular.io/)
+    - Angular Flex-Layout [(Lib for build Grid) ](https://www.npmjs.com/package/@angular/flex-layout)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Implantação em produção
+- Back end: Heroku
+    - Command used: <br> 
+    <i>heroku login</i> <br>
+    <i>git subtree --prefix backend heroku main</i>
+- Front end web: Netlify
+- Banco de dados: Postgresql
 
-## Running end-to-end tests
+# Como executar o projeto
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Back end
+Pré-requisitos: Java 11
 
-## Further help
+```bash
+# clonar repositório
+git clone https://github.com/gabrielveloso/schedule-live
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# entrar na pasta do projeto back end
+cd backend
+
+# executar o projeto
+./mvnw spring-boot:run
+```
+
+## Front end web
+Pré-requisitos: npm / yarn
+
+```bash
+# clonar repositório
+git clone https://github.com/gabrielveloso/schedule-live
+
+# entrar na pasta do projeto front end web
+cd schedule-live
+
+# instalar dependências
+npm  install
+
+# executar o projeto
+npm start
+```
+
+# Autor
+
+Gabriel Veloso
+
+https://www.linkedin.com/in/gabriel-azuirson/
