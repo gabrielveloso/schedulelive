@@ -20,13 +20,16 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { LocalDateTimePipe } from './shared/pipe/local-date-time.pipe';
+import {MatChipsModule} from '@angular/material/chips';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LivesListComponent,
-    LiveFormDialogComponent
+    LiveFormDialogComponent,
+    LocalDateTimePipe
   ],
   imports: [
     HttpClientModule,
@@ -45,9 +48,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ReactiveFormsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatChipsModule
   ],
-  providers: [],
+  providers: [LocalDateTimePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

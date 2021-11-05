@@ -13,3 +13,8 @@
       min-height: 70px;
       font-size: 0.9rem;
   }
+
+  .mat-chip-date{
+      background-color: rgb(90, 163, 192);
+      color: black;
+  }

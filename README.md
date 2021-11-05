@@ -37,6 +37,7 @@ With this application it is possible to register lives and also see a board with
 - libs: 
     - Angular Material [(Interface in Material Design Style)](https://material.angular.io/)
     - Angular Flex-Layout [(Lib for build Grid) ](https://www.npmjs.com/package/@angular/flex-layout)
+    - Moment [(A JavaScript date library for parsing, validating, manipulating, and formatting dates.)](https://www.npmjs.com/package/moment)
 
 ## Implantação em produção
 - Back end: Heroku

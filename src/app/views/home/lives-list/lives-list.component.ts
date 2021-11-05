@@ -23,6 +23,7 @@ export class LivesListComponent implements OnInit {
   getLives(){
     this.liveService.getLivesWithFlag("previous").subscribe(lives=>{
       this.livesPrevious = lives.content;
+      console.log("Previous");
       console.log(this.livesPrevious)
 
       this.livesPrevious.forEach(live=>{
@@ -32,6 +33,7 @@ export class LivesListComponent implements OnInit {
 
     this.liveService.getLivesWithFlag("next").subscribe(lives=>{
       this.livesNext = lives.content;
+      console.log("Next");
       console.log(this.livesNext);
 
       this.livesNext.forEach(live=>{
