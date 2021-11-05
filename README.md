@@ -10,25 +10,33 @@
 
 # About the project
 
-https://dsvendas-gabriel.netlify.app/
-
 Angular 11 aplication using Angular Material
 
 With this application it is possible to register lives and also see a board with past and future lives
+
+
+## Layout web
+![WEB](https://github.com/gabrielveloso/schedulelive/blob/main/screen1.png)
+![MOBILE](https://github.com/gabrielveloso/schedulelive/blob/main/screen2.png)
 
 # Tecnologias utilizadas
 ## Back end
 - Java
 - Spring Boot
 - JPA / Hibernate
-- JPQL
+- Mongodb
 - Maven
 #### Endpoints backend
-    * Heroku: https://gabriel-sdsvendas.herokuapp.com/
-    - /sales (Pageable)
-    - /sales/amount-by-seller (JPQL)
-    - /sales/success-by-seller (JPQL)
-    - /sellers (Pageable)
+    
+    GET
+    - /lives (Pageable)
+    - /sales/{id}
+
+    POST
+    - /lives 
+
+    DELETE
+    - /lives/{id} 
 
 
 ## Front end
@@ -39,13 +47,7 @@ With this application it is possible to register lives and also see a board with
     - Angular Flex-Layout [(Lib for build Grid) ](https://www.npmjs.com/package/@angular/flex-layout)
     - Moment [(A JavaScript date library for parsing, validating, manipulating, and formatting dates.)](https://www.npmjs.com/package/moment)
 
-## Implantação em produção
-- Back end: Heroku
-    - Command used: <br> 
-    <i>heroku login</i> <br>
-    <i>git subtree --prefix backend heroku main</i>
-- Front end web: Netlify
-- Banco de dados: Postgresql
+
 
 # Como executar o projeto
 
@@ -54,7 +56,7 @@ Pré-requisitos: Java 11
 
 ```bash
 # clonar repositório
-git clone https://github.com/gabrielveloso/schedule-live
+git clone https://github.com/gabrielveloso/schedulelive
 
 # entrar na pasta do projeto back end
 cd backend
@@ -68,13 +70,13 @@ Pré-requisitos: npm / yarn
 
 ```bash
 # clonar repositório
-git clone https://github.com/gabrielveloso/schedule-live
+git clone https://github.com/gabrielveloso/schedulelive
 
 # entrar na pasta do projeto front end web
-cd schedule-live
+cd schedulelive
 
 # instalar dependências
-npm  install
+npm install
 
 # executar o projeto
 npm start
