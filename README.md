@@ -16,8 +16,8 @@ With this application it is possible to register lives and also see a board with
 
 
 ## Layout web
-![WEB](https://github.com/gabrielveloso/schedulelive/blob/main/screen1.png)
-![MOBILE](https://github.com/gabrielveloso/schedulelive/blob/main/screen2.png)
+![WEB](https://github.com/gabrielveloso/schedulelive/blob/master/screen1.png)
+![MOBILE](https://github.com/gabrielveloso/schedulelive/blob/master/screen2.png)
 
 # Tecnologias utilizadas
 ## Back end
