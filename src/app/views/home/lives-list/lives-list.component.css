@@ -1,0 +1,15 @@
+.mat-card-live{
+    width: 220px;
+    border: 1px solid white;
+    border-radius: 4px 3px 6px / 2px 4px;
+    padding: 15px 1% 1% 1%;
+    text-align: justify;
+    margin: 5px;
+  }
+
+  .mat-card-title-live{
+      padding-left: 10px;
+      padding-right: 15px;
+      min-height: 70px;
+      font-size: 0.9rem;
+  }
